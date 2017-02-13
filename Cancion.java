@@ -1,6 +1,6 @@
 package estructurasIII;
 /**
- * Sobre la canciÛn se almacenar· el tÌtulo, artista o grupo y aÒo de grabaciÛn.
+ * Sobre la canci√≥n se almacenar√° el t√≠tulo, artista o grupo y a√±o de grabaci√≥n.
  * 7.3
  * @author Nieves Borrero.
  * @version 1.0
@@ -22,7 +22,7 @@ public class Cancion {
 		this.artistaOgrupo = artistaOgrupo;
 		this.anio = anio;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -35,6 +35,7 @@ public class Cancion {
 	}
 
 
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -44,6 +45,16 @@ public class Cancion {
 		if (getClass() != obj.getClass())
 			return false;
 		Cancion other = (Cancion) obj;
+		if (anio == null) {
+			if (other.anio != null)
+				return false;
+		} else if (!anio.equals(other.anio))
+			return false;
+		if (artistaOgrupo == null) {
+			if (other.artistaOgrupo != null)
+				return false;
+		} else if (!artistaOgrupo.equalsIgnoreCase(other.artistaOgrupo))
+			return false;
 		if (titulo == null) {
 			if (other.titulo != null)
 				return false;
@@ -52,9 +63,11 @@ public class Cancion {
 		return true;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "titulo:" + titulo + ", artista/grupo:" + artistaOgrupo + ", aÒo:" + anio;
+		return "titulo:" + titulo + ", artista/grupo:" + artistaOgrupo + ", a√±o:" + anio;
 	}
 	
 }
