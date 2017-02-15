@@ -38,8 +38,7 @@ public class Teclado {
 	 *            mensaje mostrado al usuario
 	 * @return cadena introducida por el usuario
 	 */
-	public static String leerCadena(String msj) {
-		System.out.println(msj);
+	public static String leerCadena(String msj) {		System.out.println(msj);
 		return leerCadena();
 	}
 
@@ -49,8 +48,7 @@ public class Teclado {
 	 * @return cadena introducida por el usuario
 	 */
 
-	public static String leerCadena() {
-		BufferedReader bReader = new BufferedReader(new InputStreamReader(
+	public static String leerCadena() {		BufferedReader bReader = new BufferedReader(new InputStreamReader(
 				System.in));
 		String cadena;
 		try {
@@ -71,9 +69,7 @@ public class Teclado {
 	public static int leerEntero() {
 		int x;
 		try {
-			x = Integer.parseInt(leerCadena().trim()); // Quita los espacios del
-														// String y convierte a
-														// int
+			x = Integer.parseInt(leerCadena().trim()); // Quita los espacios del String y convierte a int
 		} catch (Exception e) {
 			x = 0;
 		}
@@ -100,10 +96,7 @@ public class Teclado {
 	public static double leerDecimal() {
 		double x;
 		try {
-			x = Double.parseDouble(leerCadena().trim()); // Quita los espacios
-															// del String y
-															// convierte a
-															// double
+			x = Double.parseDouble(leerCadena().trim()); // Quita los espacios del String y convierte a double
 		} catch (Exception e) {
 			x = 0;
 		}
