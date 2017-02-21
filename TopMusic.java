@@ -141,10 +141,9 @@ public class TopMusic{
 	 * @return boolean
 	 */
 	boolean isEmpty() {
-		if (top.isEmpty())
-			return true;
-		return false;
+		return top.isEmpty();
 	}
+
 
 	@Override
 	public String toString() {
