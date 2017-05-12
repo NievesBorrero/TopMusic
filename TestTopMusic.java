@@ -45,7 +45,10 @@ public class TestTopMusic {
 			}
 		} while (opcion != menu.getSalir());
 	}// main
-
+	
+	/**
+	* Método para salir del programa que manda un mensaje
+	*/
 	private static void salir() {
 		System.out.println("Hasta otra");
 	}
