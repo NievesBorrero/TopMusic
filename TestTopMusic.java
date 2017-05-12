@@ -115,14 +115,14 @@ public class TestTopMusic {
 			topMusic.add(Teclado.leerCadena("Titulo:"), Teclado.leerCadena("Artista o grupo:"), Teclado.leerCadena("año:"));
 		} 
 		else {
-			posicion = Teclado.leerEntero("Introduce la posicion de la cancion a añadir:");
+			posicion = Teclado.leerEntero("Introduce la posicion de la cancion a aniadir:");
 			
 			if (indiceEsValido(posicion)){
 				if(topMusic.add((posicion),Teclado.leerCadena("Titulo:"), Teclado.leerCadena("Artista o grupo:"), 
 						Teclado.leerCadena("año:")))
-					System.out.println("Cancion añadida a la lista");
+					System.out.println("Cancion aniadida a la lista");
 				else
-				System.out.println("Imposible añadir una cancion que ya existe");
+				System.out.println("Imposible aniadir una cancion que ya existe");
 			}
 			
 		}
